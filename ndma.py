@@ -30,6 +30,7 @@ def smooth(d1):
     D = np.diag(V**(-0.5))
     WW = np.dot(np.dot(D,W),D)
     #return WW, D , W
+    # WW has to be replaced by a gene interaction network
     d = d1
     Fo = np.ones((p,m))
     Fo[d<0.5] = 0
